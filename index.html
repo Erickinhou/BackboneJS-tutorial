@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backbone tutorial</title>
+    <!-- it's necessary to maintain this order of script -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/underscore-umd.js"></script>
+    <script src="js/backbone.js"></script>
+  </head>
+  <body>
+    <script>
+      // here we have to start to write our backbone js structure
+      $(document).ready(function () {
+        const FirstView = Backbone.View.extend({
+          initialize() {
+            this.render();
+          },
+          render() {
+            console.log("Hello world");
+          }
+        });
+        const firstView = new FirstView();
+        //firstView.render();
+      });
+    </script>
+  </body>
+</html>
